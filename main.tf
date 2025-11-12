@@ -22,5 +22,5 @@ resource "azurerm_storage_blob" "zip" {
   storage_account_name   = azurerm_storage_account.yuriikeniustorage.name
   storage_container_name = azurerm_storage_container.mycontainer.name
   type                   = "Block"
-  source                 = "terraform_task_2.zip"
+  source                 = data.archive_file.terraform_task_2_zip.output_path
 }
