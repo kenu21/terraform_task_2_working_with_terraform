@@ -1,0 +1,5 @@
+resource_group_name  = "terraform-task-2"
+location             = "West Europe"
+storage_account_name = "yuriikeniustorage"
+container_name       = "mycontainer"
+blob_name            = "zip"
